@@ -151,8 +151,7 @@ def calculate_line_intersection(line_1, line_2):
     # If two lines have the same gradient, check if parrallel or on the same line.
     if line_1.gradient == line_2.gradient:
         if line_2.y_intercept == line_1.y_intercept:
-            # TODO: if on the same line check either of the endpoints are within
-            # the end points of the other line
+            # TODO: if on the same line check either of the endpoints are within the end points of the other line
             intercept = Coordinate(0, 0)
             return True, intercept
         else:
@@ -177,7 +176,7 @@ def calculate_line_intersection(line_1, line_2):
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
     # shape_1 = raw_input("Input coordinates of the vertices of shape 1 in format (0,0), (1,1)...")
-    coord_string = "(0,1), (1,1), (2,2)"
+    coord_string = "(0,1), (1,10), (1.2,1.2), (5,3), (2,-4)"
     shape_1 = Shape(coord_string)
     coord_string = "(0,0), (1,3), (2,1)"
     shape_2 = Shape(coord_string)
