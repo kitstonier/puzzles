@@ -1,4 +1,4 @@
-# puzzles
+# Puzzles
 Sample code of solutions to puzzles
 
 ```
